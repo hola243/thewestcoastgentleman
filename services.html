@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — The West Coast Gentleman</title>
+  <meta name="description" content="Brand collaborations, content creation, automotive photography and more — work with The West Coast Gentleman." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="services.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">The West Coast<span> Gentleman</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="car-candy.html">Car Candy</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☀️</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="car-candy.html" onclick="closeMenu()">Car Candy</a>
+    <a href="services.html" onclick="closeMenu()">Services</a>
+  </div>
+
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80');"></div>
+    <div class="page-hero__content container">
+      <span class="eyebrow animate-up">Work Together</span>
+      <h1 class="animate-up delay-1">Services &amp;<br/><em>Collaborations</em></h1>
+      <p class="animate-up delay-2">Let's create content that moves people — and machines.</p>
+    </div>
+  </section>
+
+  <!-- ── Intro ── -->
+  <section class="section services-intro">
+    <div class="container">
+      <div class="services-intro__inner" data-reveal>
+        <div>
+          <span class="eyebrow">What We Offer</span>
+          <div class="divider-gold"></div>
+          <h2>Elevate Your<br/><em>Brand</em></h2>
+          <p>The West Coast Gentleman is more than a personal brand — it's a platform. With an engaged audience of automotive enthusiasts, lifestyle aficionados, and style-conscious men across the Pacific, a collaboration here carries genuine weight.</p>
+          <p style="margin-top:1rem;">Every project is approached with the same standard that defines the brand: precision, passion, and Pacific cool.</p>
+        </div>
+        <div class="services-intro__numbers">
+          <div class="intro-stat">
+            <strong>10K+</strong>
+            <span>Engaged Followers</span>
+          </div>
+          <div class="intro-stat">
+            <strong>85%</strong>
+            <span>Male Audience 25–44</span>
+          </div>
+          <div class="intro-stat">
+            <strong>4.8%</strong>
+            <span>Avg. Engagement Rate</span>
+          </div>
+          <div class="intro-stat">
+            <strong>WC</strong>
+            <span>West Coast Reach</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services Grid ── -->
+  <section class="section services-grid-section">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="eyebrow">Services</span>
+        <div class="divider-gold"></div>
+        <h2>What We Do</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__number">01</div>
+          <div class="service-card__icon">📸</div>
+          <h3>Brand Partnerships</h3>
+          <p>Authentic, long-form brand integrations that resonate with a discerning automotive and lifestyle audience. No hard sells — only storytelling that fits the brand ethos.</p>
+          <ul class="service-card__list">
+            <li>Sponsored posts &amp; Reels</li>
+            <li>Product reviews &amp; features</li>
+            <li>Brand ambassador programs</li>
+            <li>Event coverage</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" style="margin-top:1.5rem;">Inquire</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__number">02</div>
+          <div class="service-card__icon">🚗</div>
+          <h3>Automotive Photography</h3>
+          <p>High-end automotive photography that captures the soul of a machine. Every shoot is planned around the perfect light, location, and moment.</p>
+          <ul class="service-card__list">
+            <li>Studio &amp; location shoots</li>
+            <li>Rolling &amp; static photography</li>
+            <li>Detail &amp; interior work</li>
+            <li>Post-processing &amp; retouching</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" style="margin-top:1.5rem;">Inquire</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__number">03</div>
+          <div class="service-card__icon">🎬</div>
+          <h3>Content Creation</h3>
+          <p>From concept to final cut — cinematic short-form content for brands, events, and personal vehicles that performs across every platform.</p>
+          <ul class="service-card__list">
+            <li>Instagram Reels &amp; TikTok</li>
+            <li>YouTube short features</li>
+            <li>Event recap films</li>
+            <li>Lifestyle &amp; brand videos</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" style="margin-top:1.5rem;">Inquire</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__number">04</div>
+          <div class="service-card__icon">🤝</div>
+          <h3>Brand Consulting</h3>
+          <p>Not sure how to position your brand in the automotive lifestyle space? Tap into years of community building and content strategy for expert guidance.</p>
+          <ul class="service-card__list">
+            <li>Social media strategy</li>
+            <li>Audience growth consulting</li>
+            <li>Content calendar planning</li>
+            <li>Brand voice development</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" style="margin-top:1.5rem;">Inquire</a>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__number">05</div>
+          <div class="service-card__icon">🎪</div>
+          <h3>Event Coverage</h3>
+          <p>Car shows, garage reveals, launch events — we capture it all with the eye of someone who genuinely loves what they're documenting.</p>
+          <ul class="service-card__list">
+            <li>Car show photography</li>
+            <li>Launch event coverage</li>
+            <li>Private collection tours</li>
+            <li>Same-day social delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" style="margin-top:1.5rem;">Inquire</a>
+        </div>
+
+        <div class="service-card service-card--accent" data-reveal>
+          <div class="service-card__number">06</div>
+          <div class="service-card__icon">⭐</div>
+          <h3>Custom Package</h3>
+          <p>Have something specific in mind? The West Coast Gentleman is open to one-of-a-kind collaborations that push the standard of what's possible.</p>
+          <ul class="service-card__list">
+            <li>Bespoke campaigns</li>
+            <li>Multi-platform strategies</li>
+            <li>Exclusive content deals</li>
+            <li>Long-term partnerships</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary" style="margin-top:1.5rem;">Let's Talk</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Process ── -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="eyebrow">How It Works</span>
+        <div class="divider-gold"></div>
+        <h2>The Process</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step" data-reveal>
+          <div class="process-step__num">1</div>
+          <div class="process-step__line"></div>
+          <h4>Reach Out</h4>
+          <p>Fill out the contact form below with your project details and goals.</p>
+        </div>
+        <div class="process-step" data-reveal>
+          <div class="process-step__num">2</div>
+          <div class="process-step__line"></div>
+          <h4>Discovery Call</h4>
+          <p>We'll connect to understand the vision, align on deliverables, and ensure the fit is right.</p>
+        </div>
+        <div class="process-step" data-reveal>
+          <div class="process-step__num">3</div>
+          <div class="process-step__line"></div>
+          <h4>Proposal</h4>
+          <p>A clear, tailored proposal with timelines, deliverables, and investment.</p>
+        </div>
+        <div class="process-step" data-reveal>
+          <div class="process-step__num">4</div>
+          <div class="process-step__line"></div>
+          <h4>Create &amp; Deliver</h4>
+          <p>We execute with precision and deliver content that exceeds expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact Form ── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info" data-reveal>
+          <span class="eyebrow">Get In Touch</span>
+          <div class="divider-gold"></div>
+          <h2>Let's Start a<br/><em>Conversation</em></h2>
+          <p>Ready to work together? Fill out the form and I'll get back to you within 48 hours. Serious inquiries only — let's make something great.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail__icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <span>West Coast, USA</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@thewestcoastgentleman.com</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">📱</div>
+              <div>
+                <strong>Instagram</strong>
+                <span>@thewestcoastgentleman</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-img">
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80" alt="West Coast Gentleman" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="James" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="West" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="james@brand.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Brand</label>
+              <input type="text" id="company" name="company" placeholder="Your Brand Name" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="brand-partnership">Brand Partnership</option>
+                <option value="automotive-photography">Automotive Photography</option>
+                <option value="content-creation">Content Creation</option>
+                <option value="brand-consulting">Brand Consulting</option>
+                <option value="event-coverage">Event Coverage</option>
+                <option value="custom">Custom Package</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select a range...</option>
+                <option value="under-1k">Under $1,000</option>
+                <option value="1k-5k">$1,000 – $5,000</option>
+                <option value="5k-15k">$5,000 – $15,000</option>
+                <option value="15k-plus">$15,000+</option>
+                <option value="discuss">Prefer to discuss</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Me About Your Project *</label>
+              <textarea id="message" name="message" placeholder="Share your vision, goals, timeline, and anything else that would help me understand what you're looking for..." required></textarea>
+            </div>
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" id="newsletter" />
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Keep me updated on The West Coast Gentleman content and events.</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">
+              Send Inquiry
+            </button>
+            <div class="form-success" id="formSuccess">
+              <span>✦</span>
+              <strong>Message Sent!</strong>
+              <p>Thank you for reaching out. I'll be in touch within 48 hours.</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo">The West Coast<span style="color:var(--accent);"> Gentleman</span></div>
+          <p>A lifestyle brand for the modern man — celebrating automotive culture, coastal living, and refined taste on the West Coast.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="car-candy.html">Car Candy</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/thewestcoastgentleman/" target="_blank">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#contact">Brand Deals</a></li>
+            <li><a href="#contact">Photography</a></li>
+            <li><a href="#contact">Content Creation</a></li>
+            <li><a href="#contact">Consulting</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 The West Coast Gentleman. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/thewestcoastgentleman/" target="_blank" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>

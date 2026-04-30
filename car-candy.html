@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Candy — The West Coast Gentleman</title>
+  <meta name="description" content="The finest cars on the West Coast — a curated gallery of automotive art." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="car-candy.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">The West Coast<span> Gentleman</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="car-candy.html" class="active">Car Candy</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☀️</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="car-candy.html" onclick="closeMenu()">Car Candy</a>
+    <a href="services.html" onclick="closeMenu()">Services</a>
+  </div>
+
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1600&q=80');"></div>
+    <div class="page-hero__content container">
+      <span class="eyebrow animate-up">The Gallery</span>
+      <h1 class="animate-up delay-1">Car <em>Candy</em></h1>
+      <p class="animate-up delay-2">The finest machines the Pacific has ever seen — documented with passion and precision.</p>
+    </div>
+  </section>
+
+  <!-- ── Filter Bar ── -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-bar__inner">
+        <span class="eyebrow" style="flex-shrink:0;">Filter By</span>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="exotic">Exotic</button>
+          <button class="filter-tab" data-filter="german">German</button>
+          <button class="filter-tab" data-filter="american">American</button>
+          <button class="filter-tab" data-filter="italian">Italian</button>
+          <button class="filter-tab" data-filter="jdm">JDM</button>
+          <button class="filter-tab" data-filter="classic">Classic</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Featured Hero Car ── -->
+  <section class="featured-car" data-reveal>
+    <div class="featured-car__image">
+      <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=1400&q=85" alt="Ferrari" loading="lazy" />
+    </div>
+    <div class="featured-car__info">
+      <span class="eyebrow">Feature of the Month</span>
+      <div class="divider-gold"></div>
+      <h2>Ferrari <em>Roma</em></h2>
+      <p class="featured-car__spec">2023 · V8 Twin-Turbo · 612 HP</p>
+      <p>The Roma is poetry in motion — a front-engined grand tourer that captures the dolce vita spirit in every curve. Shot against the California coastline at golden hour.</p>
+      <div class="featured-car__tags">
+        <span>Exotic</span>
+        <span>Italian</span>
+        <span>GT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Gallery Grid ── */  -->
+  <section class="section gallery-section">
+    <div class="container--wide">
+
+      <!-- Exotic -->
+      <div class="gallery-category" id="cat-exotic">
+        <div class="gallery-cat-header" data-reveal>
+          <span class="eyebrow">Exotic</span>
+          <div class="divider-gold"></div>
+          <h2>Exotic Machines</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--wide" data-category="exotic" data-reveal>
+            <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?w=900&q=80" alt="Lamborghini Aventador" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Lamborghini</span>
+                <h3>Aventador SVJ</h3>
+                <p>Malibu, CA</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="exotic" data-reveal>
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80" alt="Lamborghini" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Lamborghini</span>
+                <h3>Huracán EVO</h3>
+                <p>Pacific Coast Hwy</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="exotic" data-reveal>
+            <img src="https://images.unsplash.com/photo-1600712242805-5f78671b24da?w=600&q=80" alt="McLaren" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">McLaren</span>
+                <h3>720S</h3>
+                <p>Santa Monica, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- German -->
+      <div class="gallery-category" id="cat-german">
+        <div class="gallery-cat-header" data-reveal>
+          <span class="eyebrow">German</span>
+          <div class="divider-gold"></div>
+          <h2>German Engineering</h2>
+        </div>
+        <div class="gallery-grid gallery-grid--reverse">
+          <div class="gallery-item" data-category="german" data-reveal>
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80" alt="BMW M4" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">BMW</span>
+                <h3>M4 Competition</h3>
+                <p>Los Angeles, CA</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="german" data-reveal>
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Porsche" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Porsche</span>
+                <h3>911 GT3 RS</h3>
+                <p>Mulholland Drive</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-category="german" data-reveal>
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=900&q=80" alt="Mercedes AMG" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Mercedes-AMG</span>
+                <h3>GT Black Series</h3>
+                <p>Beverly Hills, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Italian -->
+      <div class="gallery-category" id="cat-italian">
+        <div class="gallery-cat-header" data-reveal>
+          <span class="eyebrow">Italian</span>
+          <div class="divider-gold"></div>
+          <h2>La Dolce Vita</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--wide" data-category="italian" data-reveal>
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=900&q=80" alt="Ferrari" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Ferrari</span>
+                <h3>F8 Tributo</h3>
+                <p>Sunset Strip, LA</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="italian" data-reveal>
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&q=80" alt="Sport car" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Ferrari</span>
+                <h3>Roma Coupe</h3>
+                <p>Pebble Beach, CA</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="italian" data-reveal>
+            <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80" alt="Maserati" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Maserati</span>
+                <h3>GranTurismo</h3>
+                <p>Laguna Beach, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- American -->
+      <div class="gallery-category" id="cat-american">
+        <div class="gallery-cat-header" data-reveal>
+          <span class="eyebrow">American</span>
+          <div class="divider-gold"></div>
+          <h2>American Muscle</h2>
+        </div>
+        <div class="gallery-grid gallery-grid--reverse">
+          <div class="gallery-item" data-category="american" data-reveal>
+            <img src="https://images.unsplash.com/photo-1638618357213-1b6ffc4a8ec4?w=600&q=80" alt="Dodge Challenger" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Dodge</span>
+                <h3>Challenger Hellcat</h3>
+                <p>Downtown LA</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-category="american" data-reveal>
+            <img src="https://images.unsplash.com/photo-1609687960986-a01a80fb0a4d?w=900&q=80" alt="Mustang GT500" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Ford</span>
+                <h3>Shelby GT500</h3>
+                <p>Ventura Freeway</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Classic / JDM -->
+      <div class="gallery-category" id="cat-classic">
+        <div class="gallery-cat-header" data-reveal>
+          <span class="eyebrow">Classic &amp; JDM</span>
+          <div class="divider-gold"></div>
+          <h2>Icons &amp; Heritage</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="classic" data-reveal>
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Classic car" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Classic</span>
+                <h3>1969 Camaro SS</h3>
+                <p>West Hollywood</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="jdm" data-reveal>
+            <img src="https://images.unsplash.com/photo-1604502584896-b4e4e0a3c2e3?w=600&q=80" alt="Nissan GTR" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Nissan</span>
+                <h3>GT-R Nismo</h3>
+                <p>PCH, Malibu</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="classic" data-reveal>
+            <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&q=80" alt="Classic Porsche" loading="lazy" />
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__info">
+                <span class="eyebrow">Porsche</span>
+                <h3>964 Carrera RS</h3>
+                <p>Monterey, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Lightbox ── -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">✕</button>
+    <button class="lightbox__nav lightbox__prev" id="lightboxPrev">‹</button>
+    <div class="lightbox__img-wrap">
+      <img src="" alt="" id="lightboxImg" />
+      <div class="lightbox__caption" id="lightboxCaption"></div>
+    </div>
+    <button class="lightbox__nav lightbox__next" id="lightboxNext">›</button>
+  </div>
+
+  <!-- ── Instagram CTA ── -->
+  <section class="section ig-cta">
+    <div class="container">
+      <div class="ig-cta__inner" data-reveal>
+        <span class="eyebrow">Follow Along</span>
+        <div class="divider-gold" style="margin: 1rem auto;"></div>
+        <h2>See More on<br/><em>Instagram</em></h2>
+        <p>New cars, new content — every week on @thewestcoastgentleman</p>
+        <a href="https://www.instagram.com/thewestcoastgentleman/" target="_blank" class="btn btn--primary" style="margin-top:2rem;">
+          @thewestcoastgentleman
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo">The West Coast<span style="color:var(--accent);"> Gentleman</span></div>
+          <p>A lifestyle brand for the modern man — celebrating automotive culture, coastal living, and refined taste on the West Coast.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="car-candy.html">Car Candy</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/thewestcoastgentleman/" target="_blank">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#cat-exotic">Exotic</a></li>
+            <li><a href="#cat-german">German</a></li>
+            <li><a href="#cat-italian">Italian</a></li>
+            <li><a href="#cat-american">American</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 The West Coast Gentleman. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/thewestcoastgentleman/" target="_blank" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+  <script src="main.js"></script>
+  <script src="car-candy.js"></script>
+</body>
+</html>

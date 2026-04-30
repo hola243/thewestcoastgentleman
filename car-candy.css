@@ -1,0 +1,146 @@
+/* ============================================
+   CAR CANDY PAGE
+   ============================================ */
+
+.page-hero h1 em { font-style:italic; color:rgba(201,168,76,.9) }
+
+/* ── Filter bar ── */
+.filter-bar {
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  position:sticky; top:var(--nav-h); z-index:100;
+}
+.filter-bar__inner {
+  display:flex; align-items:center; gap:1.5rem;
+  height:52px; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;
+}
+.filter-bar__inner::-webkit-scrollbar { display:none }
+.filter-tabs { display:flex; gap:.2rem; flex-shrink:0 }
+.filter-tab {
+  font-family:'Inter',sans-serif; font-size:.67rem; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase;
+  padding:.35rem .9rem;
+  border:1px solid transparent; color:var(--muted);
+  transition:all var(--t); white-space:nowrap;
+}
+.filter-tab:hover { color:var(--text) }
+.filter-tab.active { color:var(--gold); border-color:var(--gold) }
+
+/* ── Featured car ── */
+.featured-car {
+  display:grid; grid-template-columns:1.5fr 1fr;
+  min-height:480px; border-bottom:1px solid var(--border);
+}
+.featured-car__image { overflow:hidden }
+.featured-car__image img {
+  width:100%; height:100%; object-fit:cover;
+  transition:transform .9s var(--ease);
+}
+.featured-car:hover .featured-car__image img { transform:scale(1.03) }
+.featured-car__info {
+  background:var(--bg-alt); border-left:1px solid var(--border);
+  padding:clamp(2.5rem,5vw,5rem);
+  display:flex; flex-direction:column; justify-content:center;
+}
+.featured-car__info h2 { margin:.35rem 0 .5rem }
+.featured-car__info h2 em { font-style:italic; color:var(--gold) }
+.featured-car__spec {
+  font-size:.7rem; font-weight:600; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:1.1rem; display:block;
+}
+.featured-car__info > p { line-height:1.8; font-size:.93rem }
+.featured-car__tags {
+  display:flex; gap:.4rem; flex-wrap:wrap; margin-top:1.4rem;
+}
+.featured-car__tags span {
+  font-size:.6rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  padding:.28rem .8rem; border:1px solid var(--border); color:var(--muted);
+}
+
+/* ── Gallery ── */
+.gallery-section { padding-top:2.5rem }
+.gallery-category { margin-bottom:4.5rem }
+.gallery-cat-header { padding:0 clamp(1.25rem,4vw,4rem); margin-bottom:1.25rem }
+.gallery-cat-header h2 { font-size:clamp(1.5rem,2.8vw,2.2rem) }
+
+.gallery-grid {
+  display:grid; grid-template-columns:1fr 1fr 2fr; gap:4px;
+  padding:0 clamp(1.25rem,4vw,4rem);
+}
+.gallery-grid--reverse { grid-template-columns:2fr 1fr 1fr }
+
+.gallery-item {
+  position:relative; overflow:hidden; cursor:pointer; aspect-ratio:4/3;
+}
+.gallery-grid .gallery-item--wide:first-child,
+.gallery-grid--reverse .gallery-item--wide:last-child {
+  grid-column:3; grid-row:1/3; aspect-ratio:auto;
+}
+.gallery-grid--reverse .gallery-item--wide:last-child { grid-column:1 }
+
+.gallery-item img {
+  width:100%; height:100%; object-fit:cover;
+  transition:transform .6s var(--ease);
+  filter:brightness(.82);
+}
+.gallery-item:hover img { transform:scale(1.06); filter:brightness(.58) }
+.gallery-item__overlay {
+  position:absolute; inset:0;
+  display:flex; align-items:flex-end; padding:1.25rem;
+  background:linear-gradient(to top,rgba(0,0,0,.68) 0%,transparent 60%);
+  opacity:0; transition:opacity var(--t);
+}
+.gallery-item:hover .gallery-item__overlay { opacity:1 }
+.gallery-item__info .eyebrow { color:rgba(201,168,76,.8); font-size:.6rem }
+.gallery-item__info h3 { color:#fff; font-size:.95rem; margin:.2rem 0 .25rem }
+.gallery-item__info p { font-size:.75rem; color:rgba(255,255,255,.6); font-family:'Inter',sans-serif }
+
+/* ── Lightbox ── */
+.lightbox {
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.96); z-index:2000;
+  display:none; align-items:center; justify-content:center;
+}
+.lightbox.open { display:flex }
+.lightbox__img-wrap { max-width:90vw; max-height:85vh; position:relative }
+.lightbox__img-wrap img { max-width:90vw; max-height:80vh; object-fit:contain; width:auto; height:auto }
+.lightbox__caption {
+  color:rgba(255,255,255,.55); font-size:.75rem; font-weight:600;
+  letter-spacing:.1em; text-transform:uppercase; margin-top:.9rem; text-align:center;
+}
+.lightbox__close {
+  position:absolute; top:1.25rem; right:1.25rem;
+  color:#fff; font-size:1.1rem;
+  background:rgba(255,255,255,.1); width:38px; height:38px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  transition:background var(--t);
+}
+.lightbox__close:hover { background:var(--gold) }
+.lightbox__nav {
+  color:rgba(255,255,255,.5); font-size:2.5rem; padding:.75rem;
+  transition:color var(--t); line-height:1;
+}
+.lightbox__nav:hover { color:#fff }
+
+/* ── IG CTA ── */
+.ig-cta { background:var(--bg-alt); border-top:1px solid var(--border); text-align:center }
+.ig-cta__inner { max-width:480px; margin:0 auto }
+.ig-cta__inner h2 em { font-style:italic; color:var(--gold) }
+.ig-cta__inner p { max-width:360px; margin:0 auto }
+.ig-cta__inner .btn { margin-top:2rem }
+
+/* ── Responsive ── */
+@media (max-width:1024px) {
+  .featured-car { grid-template-columns:1fr }
+  .featured-car__image { min-height:340px }
+  .featured-car__info { border-left:none; border-top:1px solid var(--border) }
+  .gallery-grid,
+  .gallery-grid--reverse { grid-template-columns:1fr 1fr }
+  .gallery-grid .gallery-item--wide:first-child,
+  .gallery-grid--reverse .gallery-item--wide:last-child { grid-column:1/3; grid-row:auto }
+}
+@media (max-width:560px) {
+  .gallery-grid,
+  .gallery-grid--reverse { grid-template-columns:1fr }
+  .gallery-item__overlay { opacity:1 }
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The West Coast Gentleman</title>
+  <meta name="description" content="A lifestyle brand for the modern West Coast gentleman — cars, culture, and refined living." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">The West Coast<span> Gentleman</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="car-candy.html">Car Candy</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☀️</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="about.html" onclick="closeMenu()">About</a>
+    <a href="car-candy.html" onclick="closeMenu()">Car Candy</a>
+    <a href="services.html" onclick="closeMenu()">Services</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content container--wide">
+      <p class="eyebrow animate-up">West Coast · Refined · Culture</p>
+      <h1 class="animate-up delay-1">The Art of<br/><em>Effortless</em> Style</h1>
+      <p class="hero__sub animate-up delay-2">
+        Where Pacific living meets refined taste. Cars, culture,<br class="desktop-break"/> and the gentleman's pursuit of excellence.
+      </p>
+      <div class="hero__actions animate-up delay-3">
+        <a href="car-candy.html" class="btn btn--primary">View Car Candy</a>
+        <a href="about.html" class="btn btn--outline hero__btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="hero__scroll animate-up delay-4">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── Marquee ── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Automotive Excellence</span>
+      <span class="marquee-dot">◆</span>
+      <span>West Coast Living</span>
+      <span class="marquee-dot">◆</span>
+      <span>Refined Taste</span>
+      <span class="marquee-dot">◆</span>
+      <span>Car Culture</span>
+      <span class="marquee-dot">◆</span>
+      <span>Gentleman's Lifestyle</span>
+      <span class="marquee-dot">◆</span>
+      <span>Pacific Elegance</span>
+      <span class="marquee-dot">◆</span>
+      <span>Automotive Excellence</span>
+      <span class="marquee-dot">◆</span>
+      <span>West Coast Living</span>
+      <span class="marquee-dot">◆</span>
+      <span>Refined Taste</span>
+      <span class="marquee-dot">◆</span>
+      <span>Car Culture</span>
+      <span class="marquee-dot">◆</span>
+      <span>Gentleman's Lifestyle</span>
+      <span class="marquee-dot">◆</span>
+      <span>Pacific Elegance</span>
+      <span class="marquee-dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ── Intro ── -->
+  <section class="section intro-section">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text" data-reveal>
+          <span class="eyebrow">About The Brand</span>
+          <div class="divider-gold"></div>
+          <h2>More Than a Lifestyle,<br/><em>It's a Standard</em></h2>
+          <p>The West Coast Gentleman is a celebration of everything the Pacific coast stands for — freedom, beauty, and the relentless pursuit of the finer things. From show-stopping cars to sun-soaked coastal culture, this is where passion meets refinement.</p>
+          <p style="margin-top:1rem;">Whether you're a connoisseur of horsepower or simply drawn to an elevated way of living, you've found your community.</p>
+          <a href="about.html" class="btn btn--outline" style="margin-top:2rem;">Learn More</a>
+        </div>
+        <div class="intro-image" data-reveal>
+          <div class="intro-image__main">
+            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=800&q=80" alt="Gentleman lifestyle" loading="lazy" />
+          </div>
+          <div class="intro-image__badge">
+            <span class="eyebrow">Est.</span>
+            <strong>MMXX</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ── -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat" data-reveal>
+          <strong>10K+</strong>
+          <span>Instagram Followers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat" data-reveal>
+          <strong>200+</strong>
+          <span>Cars Featured</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat" data-reveal>
+          <strong>5+</strong>
+          <span>Years of Excellence</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat" data-reveal>
+          <strong>WC</strong>
+          <span>West Coast Born</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Car Candy Preview ── -->
+  <section class="section car-preview">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Featured</span>
+        <div class="divider-gold"></div>
+        <h2>Car Candy</h2>
+        <p>The finest machines the West Coast has to offer — curated for the discerning eye.</p>
+      </div>
+      <div class="car-grid" data-reveal>
+        <div class="car-card car-card--large">
+          <div class="car-card__image">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=900&q=80" alt="Porsche 911" loading="lazy" />
+          </div>
+          <div class="car-card__overlay">
+            <span class="eyebrow">Porsche</span>
+            <h3>911 Carrera</h3>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-card__image">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80" alt="Lamborghini" loading="lazy" />
+          </div>
+          <div class="car-card__overlay">
+            <span class="eyebrow">Lamborghini</span>
+            <h3>Huracán</h3>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-card__image">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80" alt="BMW M" loading="lazy" />
+          </div>
+          <div class="car-card__overlay">
+            <span class="eyebrow">BMW</span>
+            <h3>M4 Competition</h3>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-card__image">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&q=80" alt="Mercedes AMG" loading="lazy" />
+          </div>
+          <div class="car-card__overlay">
+            <span class="eyebrow">Mercedes-AMG</span>
+            <h3>GT Black Series</h3>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-card__image">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Porsche" loading="lazy" />
+          </div>
+          <div class="car-card__overlay">
+            <span class="eyebrow">Porsche</span>
+            <h3>Taycan Turbo S</h3>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:3rem;" data-reveal>
+        <a href="car-candy.html" class="btn btn--primary">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Philosophy / Quote ── -->
+  <section class="quote-section">
+    <div class="quote-bg"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="quote-inner" data-reveal>
+        <div class="quote-mark">"</div>
+        <blockquote>A gentleman doesn't just drive a car — he commands the road, the room, and the moment.</blockquote>
+        <cite>— The West Coast Gentleman</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Lifestyle Grid ── -->
+  <section class="section lifestyle-section">
+    <div class="container--wide">
+      <div class="section-header container" data-reveal>
+        <span class="eyebrow">The Lifestyle</span>
+        <div class="divider-gold"></div>
+        <h2>Live the West Coast Way</h2>
+      </div>
+      <div class="lifestyle-grid" data-reveal>
+        <article class="lifestyle-card lifestyle-card--tall">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80" alt="Style" loading="lazy" />
+          <div class="lifestyle-card__content">
+            <span class="eyebrow">Style</span>
+            <h3>The Modern Gentleman's Wardrobe</h3>
+          </div>
+        </article>
+        <article class="lifestyle-card">
+          <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="West Coast City" loading="lazy" />
+          <div class="lifestyle-card__content">
+            <span class="eyebrow">Culture</span>
+            <h3>Pacific Coast Chronicles</h3>
+          </div>
+        </article>
+        <article class="lifestyle-card">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&q=80" alt="Car" loading="lazy" />
+          <div class="lifestyle-card__content">
+            <span class="eyebrow">Automotive</span>
+            <h3>The Machine Is the Message</h3>
+          </div>
+        </article>
+        <article class="lifestyle-card lifestyle-card--wide">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&q=80" alt="Luxury" loading="lazy" />
+          <div class="lifestyle-card__content">
+            <span class="eyebrow">Luxury</span>
+            <h3>Elevated Everyday Living</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services CTA ── -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-inner" data-reveal>
+        <span class="eyebrow">Work Together</span>
+        <div class="divider-gold" style="margin:1rem auto;"></div>
+        <h2>Let's Create Something<br/><em>Extraordinary</em></h2>
+        <p>From brand collaborations to content creation and automotive photography — let's make it happen.</p>
+        <a href="services.html" class="btn btn--primary" style="margin-top:2rem;">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo">The West Coast<span style="color:var(--accent);"> Gentleman</span></div>
+          <p>A lifestyle brand for the modern man — celebrating automotive culture, coastal living, and refined taste on the West Coast.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="car-candy.html">Car Candy</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/thewestcoastgentleman/" target="_blank">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Brand Deals</a></li>
+            <li><a href="services.html">Photography</a></li>
+            <li><a href="services.html">Content Creation</a></li>
+            <li><a href="services.html">Consulting</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 The West Coast Gentleman. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/thewestcoastgentleman/" target="_blank" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
