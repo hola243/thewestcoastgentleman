@@ -40,11 +40,11 @@
 
   <!-- ── Page Hero ── -->
   <section class="page-hero about-hero">
-    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80');"></div>
+    <div class="page-hero__bg" data-c-bg="about.hero_image" style="background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80');"></div>
     <div class="page-hero__content container">
-      <span class="eyebrow animate-up">The Story</span>
-      <h1 class="animate-up delay-1">About the<br/><em>Gentleman</em></h1>
-      <p class="animate-up delay-2">Born on the West Coast. Raised on horsepower and salt air.</p>
+      <span class="eyebrow animate-up" data-c="about.hero_eyebrow">The Story</span>
+      <h1 class="animate-up delay-1"><span data-c="about.hero_h1a">About the</span><br/><em data-c="about.hero_h1b">Gentleman</em></h1>
+      <p class="animate-up delay-2" data-c="about.hero_sub">Born on the West Coast. Raised on horsepower and salt air.</p>
     </div>
   </section>
 
@@ -55,16 +55,16 @@
         <div class="about-origin__text">
           <span class="eyebrow">The Beginning</span>
           <div class="divider-gold"></div>
-          <h2>Where It All<br/><em>Began</em></h2>
-          <p>The West Coast Gentleman started as a personal expression — a way to document the intersection of refined living and raw automotive passion that defines life along the Pacific. What began as a simple Instagram account grew into a community of like-minded individuals who share a deep appreciation for craftsmanship, culture, and the open road.</p>
-          <p style="margin-top:1.2rem;">Every post, every collaboration, every sun-drenched photo shoot is driven by a single belief: a gentleman's character is reflected in the details — how he dresses, what he drives, and how he carries himself through the world.</p>
+          <h2><span data-c="about.origin_h2a">Where It All</span><br/><em data-c="about.origin_h2b">Began</em></h2>
+          <p data-c="about.origin_p1">The West Coast Gentleman started as a personal expression — a way to document the intersection of refined living and raw automotive passion that defines life along the Pacific.</p>
+          <p style="margin-top:1.2rem;" data-c="about.origin_p2">Every post, every collaboration, every sun-drenched photo shoot is driven by a single belief: a gentleman's character is reflected in the details.</p>
         </div>
         <div class="about-origin__visual">
           <div class="about-origin__img-main">
-            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=700&q=80" alt="The West Coast Gentleman" loading="lazy" />
+            <img data-c-src="about.origin_image1" src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=700&q=80" alt="The West Coast Gentleman" loading="lazy" />
           </div>
           <div class="about-origin__img-accent">
-            <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&q=80" alt="Detail shot" loading="lazy" />
+            <img data-c-src="about.origin_image2" src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&q=80" alt="Detail shot" loading="lazy" />
           </div>
         </div>
       </div>
@@ -79,28 +79,7 @@
         <div class="divider-gold"></div>
         <h2>The Code of the<br/><em>Gentleman</em></h2>
       </div>
-      <div class="values-grid">
-        <div class="value-card" data-reveal>
-          <div class="value-card__icon">✦</div>
-          <h3>Authenticity</h3>
-          <p>Every car featured, every collaboration pursued is genuine. No filters on who we are or what we love.</p>
-        </div>
-        <div class="value-card" data-reveal>
-          <div class="value-card__icon">◈</div>
-          <h3>Craftsmanship</h3>
-          <p>From the stitching on a leather seat to the tailoring of a suit — details are everything.</p>
-        </div>
-        <div class="value-card" data-reveal>
-          <div class="value-card__icon">⬡</div>
-          <h3>Community</h3>
-          <p>This brand belongs to everyone who has ever felt the pull of a perfect machine or a flawless sunset.</p>
-        </div>
-        <div class="value-card" data-reveal>
-          <div class="value-card__icon">◉</div>
-          <h3>Excellence</h3>
-          <p>We don't settle for ordinary. The West Coast sets a standard — and we live it every single day.</p>
-        </div>
-      </div>
+      <div class="values-grid" id="values-root"></div>
     </div>
   </section>
 
@@ -112,36 +91,7 @@
         <div class="divider-gold"></div>
         <h2>Milestones</h2>
       </div>
-      <div class="timeline">
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-year">2020</div>
-          <div class="timeline-content">
-            <h3>The Account Launches</h3>
-            <p>A passion project becomes public. The first posts go live — raw, authentic, and immediately resonant with car lovers across the West Coast.</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-year">2021</div>
-          <div class="timeline-content">
-            <h3>First Brand Collaboration</h3>
-            <p>Partnering with premier automotive brands and lifestyle labels, The West Coast Gentleman earns its place in the culture.</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-year">2022</div>
-          <div class="timeline-content">
-            <h3>The Community Grows</h3>
-            <p>10,000 followers and counting. Events, meetups, and an ever-expanding family of gentlemen who share the vision.</p>
-          </div>
-        </div>
-        <div class="timeline-item" data-reveal>
-          <div class="timeline-year">2025</div>
-          <div class="timeline-content">
-            <h3>A Full Platform</h3>
-            <p>From social media to a full website — The West Coast Gentleman expands to serve its community with content, services, and culture.</p>
-          </div>
-        </div>
-      </div>
+      <div class="timeline" id="timeline-root"></div>
     </div>
   </section>
 
@@ -230,5 +180,6 @@
 
   <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
   <script src="main.js"></script>
+  <script src="content-loader.js"></script>
 </body>
 </html>

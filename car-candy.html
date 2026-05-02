@@ -67,17 +67,17 @@
   </div>
 
   <!-- ── Featured Hero Car ── -->
-  <section class="featured-car" data-reveal>
+  <section class="featured-car" id="featured-car-block" data-reveal>
     <div class="featured-car__image">
-      <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=1400&q=85" alt="Ferrari" loading="lazy" />
+      <img data-c-src="cars.featured.image" src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=1400&q=85" alt="Ferrari" loading="lazy" />
     </div>
     <div class="featured-car__info">
       <span class="eyebrow">Feature of the Month</span>
       <div class="divider-gold"></div>
-      <h2>Ferrari <em>Roma</em></h2>
-      <p class="featured-car__spec">2023 · V8 Twin-Turbo · 612 HP</p>
-      <p>The Roma is poetry in motion — a front-engined grand tourer that captures the dolce vita spirit in every curve. Shot against the California coastline at golden hour.</p>
-      <div class="featured-car__tags">
+      <h2><span data-c="cars.featured.brand">Ferrari</span> <em data-c="cars.featured.model">Roma</em></h2>
+      <p class="featured-car__spec" data-c="cars.featured.spec">2023 · V8 Twin-Turbo · 612 HP</p>
+      <p data-c="cars.featured.description">The Roma is poetry in motion — a front-engined grand tourer that captures the dolce vita spirit in every curve.</p>
+      <div class="featured-car__tags" data-c="cars.featured.tags">
         <span>Exotic</span>
         <span>Italian</span>
         <span>GT</span>
@@ -85,9 +85,9 @@
     </div>
   </section>
 
-  <!-- ── Gallery Grid ── */  -->
+  <!-- ── Gallery Grid — built dynamically from content.json ── -->
   <section class="section gallery-section">
-    <div class="container--wide">
+    <div class="container--wide" id="gallery-root">
 
       <!-- Exotic -->
       <div class="gallery-category" id="cat-exotic">
@@ -362,6 +362,7 @@
 
   <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
   <script src="main.js"></script>
+  <script src="content-loader.js"></script>
   <script src="car-candy.js"></script>
 </body>
 </html>

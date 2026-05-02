@@ -40,13 +40,13 @@
 
   <!-- ── Hero ── -->
   <section class="hero">
-    <div class="hero__bg"></div>
+    <div class="hero__bg" data-c-bg="home.hero_image"></div>
     <div class="hero__overlay"></div>
     <div class="hero__content container--wide">
-      <p class="eyebrow animate-up">West Coast · Refined · Culture</p>
-      <h1 class="animate-up delay-1">The Art of<br/><em>Effortless</em> Style</h1>
-      <p class="hero__sub animate-up delay-2">
-        Where Pacific living meets refined taste. Cars, culture,<br class="desktop-break"/> and the gentleman's pursuit of excellence.
+      <p class="eyebrow animate-up" data-c="home.hero_eyebrow">West Coast · Refined · Culture</p>
+      <h1 class="animate-up delay-1"><span data-c="home.hero_h1a">The Art of</span><br/><em data-c="home.hero_h1b">Effortless</em> <span data-c="home.hero_h1c">Style</span></h1>
+      <p class="hero__sub animate-up delay-2" data-c="home.hero_sub">
+        Where Pacific living meets refined taste. Cars, culture, and the gentleman's pursuit of excellence.
       </p>
       <div class="hero__actions animate-up delay-3">
         <a href="car-candy.html" class="btn btn--primary">View Car Candy</a>
@@ -96,14 +96,14 @@
         <div class="intro-text" data-reveal>
           <span class="eyebrow">About The Brand</span>
           <div class="divider-gold"></div>
-          <h2>More Than a Lifestyle,<br/><em>It's a Standard</em></h2>
-          <p>The West Coast Gentleman is a celebration of everything the Pacific coast stands for — freedom, beauty, and the relentless pursuit of the finer things. From show-stopping cars to sun-soaked coastal culture, this is where passion meets refinement.</p>
-          <p style="margin-top:1rem;">Whether you're a connoisseur of horsepower or simply drawn to an elevated way of living, you've found your community.</p>
+          <h2><span data-c="home.intro_h2a">More Than a Lifestyle,</span><br/><em data-c="home.intro_h2b">It's a Standard</em></h2>
+          <p data-c="home.intro_p1">The West Coast Gentleman is a celebration of everything the Pacific coast stands for — freedom, beauty, and the relentless pursuit of the finer things.</p>
+          <p style="margin-top:1rem;" data-c="home.intro_p2">Whether you're a connoisseur of horsepower or simply drawn to an elevated way of living, you've found your community.</p>
           <a href="about.html" class="btn btn--outline" style="margin-top:2rem;">Learn More</a>
         </div>
         <div class="intro-image" data-reveal>
           <div class="intro-image__main">
-            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=800&q=80" alt="Gentleman lifestyle" loading="lazy" />
+            <img data-c-src="home.intro_image" src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=800&q=80" alt="Gentleman lifestyle" loading="lazy" />
           </div>
           <div class="intro-image__badge">
             <span class="eyebrow">Est.</span>
@@ -119,18 +119,18 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat" data-reveal>
-          <strong>10K+</strong>
-          <span>Instagram Followers</span>
+          <strong data-c="home.stat1_num">10K+</strong>
+          <span data-c="home.stat1_label">Instagram Followers</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat" data-reveal>
-          <strong>200+</strong>
-          <span>Cars Featured</span>
+          <strong data-c="home.stat2_num">200+</strong>
+          <span data-c="home.stat2_label">Cars Featured</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat" data-reveal>
-          <strong>5+</strong>
-          <span>Years of Excellence</span>
+          <strong data-c="home.stat3_num">5+</strong>
+          <span data-c="home.stat3_label">Years of Excellence</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat" data-reveal>
@@ -209,7 +209,7 @@
     <div class="container" style="position:relative;z-index:1;">
       <div class="quote-inner" data-reveal>
         <div class="quote-mark">"</div>
-        <blockquote>A gentleman doesn't just drive a car — he commands the road, the room, and the moment.</blockquote>
+        <blockquote data-c="home.quote">A gentleman doesn't just drive a car — he commands the road, the room, and the moment.</blockquote>
         <cite>— The West Coast Gentleman</cite>
       </div>
     </div>
@@ -319,5 +319,6 @@
   <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
 
   <script src="main.js"></script>
+  <script src="content-loader.js"></script>
 </body>
 </html>

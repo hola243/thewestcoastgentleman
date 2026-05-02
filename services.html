@@ -56,8 +56,8 @@
           <span class="eyebrow">What We Offer</span>
           <div class="divider-gold"></div>
           <h2>Elevate Your<br/><em>Brand</em></h2>
-          <p>The West Coast Gentleman is more than a personal brand — it's a platform. With an engaged audience of automotive enthusiasts, lifestyle aficionados, and style-conscious men across the Pacific, a collaboration here carries genuine weight.</p>
-          <p style="margin-top:1rem;">Every project is approached with the same standard that defines the brand: precision, passion, and Pacific cool.</p>
+          <p data-c="services.intro_p1">The West Coast Gentleman is more than a personal brand — it's a platform. With an engaged audience of automotive enthusiasts, lifestyle aficionados, and style-conscious men across the Pacific, a collaboration here carries genuine weight.</p>
+          <p style="margin-top:1rem;" data-c="services.intro_p2">Every project is approached with the same standard that defines the brand: precision, passion, and Pacific cool.</p>
         </div>
         <div class="services-intro__numbers">
           <div class="intro-stat">
@@ -89,7 +89,7 @@
         <div class="divider-gold"></div>
         <h2>What We Do</h2>
       </div>
-      <div class="services-grid">
+      <div class="services-grid" id="services-cards-root">
 
         <div class="service-card" data-reveal>
           <div class="service-card__number">01</div>
@@ -232,21 +232,21 @@
               <div class="contact-detail__icon">📍</div>
               <div>
                 <strong>Location</strong>
-                <span>West Coast, USA</span>
+                <span data-c="services.contact_location">West Coast, USA</span>
               </div>
             </div>
             <div class="contact-detail">
               <div class="contact-detail__icon">📧</div>
               <div>
                 <strong>Email</strong>
-                <span>hello@thewestcoastgentleman.com</span>
+                <span data-c="services.contact_email">hello@thewestcoastgentleman.com</span>
               </div>
             </div>
             <div class="contact-detail">
               <div class="contact-detail__icon">📱</div>
               <div>
                 <strong>Instagram</strong>
-                <span>@thewestcoastgentleman</span>
+                <span data-c="services.contact_instagram">@thewestcoastgentleman</span>
               </div>
             </div>
           </div>
@@ -375,6 +375,7 @@
 
   <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
   <script src="main.js"></script>
+  <script src="content-loader.js"></script>
   <script src="services.js"></script>
 </body>
 </html>
